@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http:wwww.thymeleaf.org">
+
+<head th:fragment ="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo} +  'tabla' "></title>
+    <link rel="stylesheet" th:href="@{/fontawesome/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/scss/app.min.css}">
+
+</head>
+
+<body>
+    <header th:fragment ="header">  
+        <div>
+
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-mainbg">
+            <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#">
+                            <i class=" far fa-clone"></i>
+                            <span>Administrar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="s#">
+                            <i class=" far fa-calendar-alt"></i>
+                            <span>Configurar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#">
+                            <i class=" far fa-chart-bar"></i>
+                            <span>Salir</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        <aside th:fragment ="aside">
+            <div class="card-background">
+                    <div class="img-perfil">
+                        <img th:src="@{img/perfil.png}" alt="perfil">
+                    </div>
+            </div>
+            <div class="card-background">
+                    <span>Felipe Villalba</span>
+                    <span> <i class="fas fa-user-lock"></i> Adminstrador</span>
+            </div> 
+            <div class="card-background">
+                    <h5>Estado</h5>
+                    <span><i class="fas fa-laptop"></i>: 3 disponibles</span>
+                    <span><i class="fas fa-users"></i>: 10 disponibles</span>
+            </div>
+        </aside>
+
+    </main>
+
+    
+
+    <script th:src="@{/fontawesome/js/all.min.js}"> </script>
+    <script thsrc="@{/js/jquery.min.js}"> </script>
+    <script th:src="@{/js/bootstrap.js}"> </script>
+    <script th:src="@{/js/js.js}"> </script>
+
+</body>
+
+</html>

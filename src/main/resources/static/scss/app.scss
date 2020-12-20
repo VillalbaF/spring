@@ -1,0 +1,314 @@
+@import 'imports/variables.scss', 'imports/menu';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100;1,400&display=swap');
+
+input:focus, input.form-control:focus, .btn:focus{
+
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+a, a:hover{
+text-decoration: none;
+}
+
+body{
+position: relative;
+background: $negroPrimario;
+width: 100%;
+height: 100%;
+}
+
+main{
+    font-family: 'Lato', sans-serif !important;
+}
+.login{
+min-width: 60%;
+height: 700px;
+position: relative;
+top: 150px;
+border-radius: 10px;
+overflow: hidden;
+box-shadow:  0px 0px 1px #ffffff ;
+}
+    .login > div:first-child{
+        background-image: linear-gradient(to bottom, #00cbf6, #00c2f5, #00b8f3, #00aef0, #00a4ec);
+        height: 25%;
+        opacity: .8;
+    }
+
+        .header-login{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-login > div:nth-child(1)  {
+
+            width: 30%;
+            height: 100%;
+        }
+            .header-login > div:nth-child(1) >  * {
+                font-size: 5rem;
+                color: #fff;  
+                position: relative;
+                left:10%;
+                top: 10%;
+            }
+
+
+
+
+    .login div:nth-child(2){
+        height: 90%;
+        background: #fff;
+    }
+
+        .login div:last-child > div{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 50px;
+        }
+
+            .input-group {
+                padding: 20px 0px;
+            }
+                .input-group  > div{
+                    padding: 0px 50px 0px 0px;
+                    background:rgb(221, 221, 221);
+                }
+                .input-group   > div> *{
+                    font-size: 1.4rem;
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    position: relative;
+                    left: 100%;
+                }
+    
+
+            .input-group .btn{
+                background: $azulPrimario;
+                width:60%;
+                color: #fff;
+            }
+
+            // MAIN ASIDE
+
+
+main{
+    background:$negroPrimario;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow:  column nowrap;
+}
+    main aside {
+        margin: 0x 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow:  row nowrap;
+        background: rgba($color: #FFF, $alpha: .2);
+        padding: 10px 0px;
+
+    }
+    .card-background{
+        width: 30%;
+        border: 1px solid rgba($color: #000000, $alpha: .9);    }
+    
+    main aside .card-background:nth-child(1){
+        display: flex;
+        justify-content: center;
+    }
+    main aside .card-background:nth-child(2){
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        color: rgba($blancoPrimario, $alpha: .6);
+    }
+    main aside .card-background:nth-child(3){
+        display: inline-flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+            .img-perfil{
+                display: flex;
+                position: relative;
+                width: 30%;
+            }
+            .img-perfil img{
+                width:100%;
+                height: 100%;
+            }
+
+          .card-background:nth-child(2) span {
+              text-align: center;
+            }
+
+            main aside .card-background:nth-child(3)   {
+               color: rgba($negroPrimario, $alpha: 1);
+            }
+            
+            main aside .card-background:nth-child(3) > span {
+                width: 50%;
+                display: flex;
+                position: relative;
+                text-align: center;
+                margin: auto;
+             }
+
+    .menu{
+        display: flex;
+        margin: 100px ;
+        justify-content: space-between;
+
+    }
+
+
+    .menu a{
+        margin: 10px;
+        width: 300px;   
+        height: 300px;
+        background: rgba($color:$azulSecundario, $alpha: .3) ;
+        border: 2px solid rgba($color: #ffffff, $alpha: .05 );
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }      
+        .menu a:hover{
+            background: rgba($color:$azulSecundario, $alpha: .5) ;
+        }
+
+    .menu a .content-img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+    .menu .content-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+        .menu a span{
+            width: 100%;
+            height: 80px;  
+            font-size: 1.2rem;
+            text-align: center;
+            vertical-align: middle;
+            color: rgba($color: #fff, $alpha: .5);
+        }
+
+    .main-table{
+        background: red;
+        display: flex;
+
+    }
+
+        thead{
+            color:$blancoPrimario;
+            background: $AzulMarino;
+        }
+        tbody{
+            background: rgb(238, 238, 238);
+        }
+
+        tr:hover{
+            background: rgba($color: $azulSecundario, $alpha: .6) ;
+        }
+        td {
+        padding: 5px; 
+        cursor: pointer;
+        }
+        .selected{
+           background:  $azulSecundario;
+        }
+    
+@media  (min-width: 900px) and  (max-width: 1100px){
+    
+    .menu{
+        display: flexbox;
+        margin:  auto  0px auto 0;
+        position: relative;
+    }
+        .menu a{
+            margin: 10px;
+            width: 50%;   
+            height: 350px;
+        }
+        .menu a .content-img{
+            width: 180px;
+            height: 180px;
+            padding: 10px;
+        }
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    
+    .login{
+        width: 100%;
+        }     
+
+        .header-login > div:nth-child(1) >  * {
+            left:0%;
+        }
+
+
+
+        .img-perfil{
+            display: flex;
+            position: relative;
+            width: 60%;
+        }
+        
+        .menu{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            margin: 0px ;
+        }
+
+        .menu a{
+            display: inline-flex;
+            flex-flow:  column nowrap;
+            height: 200px;
+            width: 95%;
+            margin:20px auto;
+ 
+        }
+
+        .menu a .content-img{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+        }
+
+
+
+  }
+
+
+@media only screen and (max-width: 600px){
+
+.img-perfil{
+
+    width:60%;
+    height: 60%;
+}
+
+} 

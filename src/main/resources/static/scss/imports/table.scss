@@ -1,0 +1,52 @@
+
+.rwd-table {
+    margin: 1em 0;
+    min-width: 00px; // adjust to your needs
+    
+    tr {
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+      display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+    }
+    
+    td {
+      display: block; 
+      
+      &:first-child {
+        padding-top: .5em;
+      }
+      &:last-child {
+        padding-bottom: .5em;
+      }
+  
+      &:before {
+        content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+        font-weight: bold;
+  
+        // optional stuff to make it look nicer
+        width: 6.5em; // magic number :( adjust according to your own content
+        display: inline-block;
+        // end options
+        
+        @media (min-width: 600px) {
+          display: none;
+        }
+      }
+    }
+    
+    th:first-child, td:last-child{
+      text-align: left;
+      
+        padding-left: 0;
+      
+        padding-right: 0;
+    
+    }
+    
+    
+}
+
+

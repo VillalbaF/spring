@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://wwww.thymeleaf.org">
+    
+<head th:replace="layout/layout :: head">
+<title>casa</title>
+</head>
+
+<body>
+    <header th:replace = "layout/layout :: header"></header>
+
+    <main >
+        <aside th:replace = "layout/layout :: aside" class="aside"></aside>
+        <section class="table-responsive">
+
+            <table class="table"  id="display-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Nombre de usuario</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Equipo</th>
+                    <th>Modelo</th>
+                    <th>Fecha  de prestamo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>553322323</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>99222655</td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <input type="button" name="OK" class="ok" value="OK"/>
+        </section>
+
+    </main>
+
+
+    <script src="/fontawesome/js/all.min.js"> </script>
+    <script src="/js/jquery.min.js"> </script>
+    <script src="/js/bootstrap.js"> </script>
+    <script src="/js/js.js"> </script>
+
+
+</body>
+</html>

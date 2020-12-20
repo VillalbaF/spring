@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http:wwww.thymeleaf.org">
+
+<head th:replace="layout/layout :: head"></head>
+
+<body>
+    <header th:replace = "layout/layout :: header"></header>
+    <main>
+        <aside th:replace = "layout/layout :: aside"></aside>
+        <section>
+                <div class="menu">
+                        <a th:href="@{/dashboard/tabla}"><div class="content-img"><img th:src="@{/img/table.png}" alt=""></div><span>TABLA</span></a>
+                        <a href=""><div class="content-img"><img th:src="@{/img/laptop.png}" alt=""></div><span>ESTADO DE EQUIPOS</span></a>
+                        <a href=""><div class="content-img"><img th:src="@{/img/users.png}" alt=""></div><span>ESTADOS DE LOS USUARIOS</span></i></a>
+                        <a href=""><div class="content-img"><img th:src="@{/img/config.png}" alt=""></div> <span>CONFIGURAR</span></a>
+                </div>
+        </section>
+
+    </main>
+
+    
+
+    <script src="/fontawesome/js/all.min.js"> </script>
+    <script src="/js/jquery.min.js"> </script>
+    <script src="/js/bootstrap.js"> </script>
+    <script src="/js/js.js"> </script>
+
+</body>
+
+</html>

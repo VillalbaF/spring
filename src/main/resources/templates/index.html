@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${tituloLogin}"></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/scss/app.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box d-flex justify-content-center">
+
+            <div class="login">
+
+                <div class="header-login">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <form action="" method="POST">
+
+                        <div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <i class="far fa-user"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Correo">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Clave">
+                            </div>
+                            
+                            <div class="input-group">
+                                <button type="submit" class="btn">ENTRAR</button>
+                            </div>
+                                <div class="alert alert-danger" role="alert">
+                                   <ul>
+                                       <li> errors</li>
+                                   </ul>
+                                </div>
+
+                            <div class="input-group">
+                                    <a href="#">Registro</a>
+                            </div>
+
+                        </div>
+    
+
+                    </form>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.min.js"> </script>
+    <script src="/js/all.min.js"> </script>
+
+</body>
+
+</html>
